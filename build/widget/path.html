@@ -1,0 +1,191 @@
+<!doctype html>
+<!-- 
+
+新浪移动云平台欢迎各位看好HTML5改变移动平台的同学加入：
+
+- 前端框架架构师：负责架构和实现一个专门给类PhoneGap方案的前端框架，管理设备接口和兼容上的复杂性，让开发者专心业务逻辑。
+
+- PHP开发工程师：我们正在开发一个完全在线开发类PhoneGap应用的平台，在线编辑，在线调试，在线打包，在线发布。有浏览器就有一切。很酷吧，我们觉得你的加入可以让这个平台更酷。也许你改变不了世界，但会有很多程序员们真心感谢你的努力。
+
+- Android架构师：你是Android的牛人，你对Android的接口设计有自己的想法，那么来做我们的Android架构师吧，在这里你可以按你的想法封装接口，并提供给数以万计的开发者使用。
+
+
+我们也许提供不了全行业最高的薪资，但我们可以提供一个潜心做技术的稳定环境。
+没有那么多的加班，没有那么多的需求变更，更不会有不懂技术的产品经理跳出来跟你指手划脚。
+
+简历投递邮箱： easychen@gmail.com  
+
+PS：别忘了在产品版本中把这段注释删掉啊亲
+
+-->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>oPath</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" id="viewport" content="height=device-height,width=device-width,user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+	
+	<style type="text/css">
+<!--
+div.scroll {
+height: 200px;
+width: 300px;
+overflow: auto;
+border: 1px solid #666;
+background-color: #ccc;
+padding: 8px;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+-->
+</style> 
+</head>
+<body class="op-body">
+
+<div class="op-card cur" id="path_card">
+
+<header  class="op-header">
+<input type="button" class="header-btn left" value="退出" onclick="logout();"/>
+<input type="button" class="header-btn right" value="头像" onclick="avatar();" id="avatar_button"/>
+<h1>oPath</h1>
+</header>
+<div id="main" class="op-wrapper">
+	<div id="scroller" class="op-scroller">
+	<div id="cover">
+		<div id="cover_icon"></div>	
+		<div id="refresh_icon"><img src="image/refresh_2x.png" id="refresh_image" width="24" onclick="load_path();"></div>	
+		<div id="cover_dot"></div>
+		<div id="cover_line"></div>
+		<div id="cover_time"></div>
+		
+	</div>
+		<ul class="scroll" id="path_list">
+		</ul>
+		<div id="more_button" onclick="load_more_path(last_pid);"> 载入更多 </div>
+	</div>
+	
+</div>
+
+<footer class="op-footer">
+  <a href="javascript:photo();toggle_menu();"><img id="path_photo" class="path_icon" src="image/icon/photo52.png" /></a>
+  <a href="javascript:toggle_menu();"><img id="path_people" class="path_icon" src="image/icon/none52.png" /></a>
+  <a href="javascript:toggle_menu();"><img id="path_place" class="path_icon" src="image/icon/none52.png" /></a>
+  <a href="javascript:toggle_menu();"><img id="path_music" class="path_icon" src="image/icon/none52.png" /></a>
+  <a href="javascript:change_card('thought_card');toggle_menu();"><img id="path_thought" class="path_icon" src="image/icon/thought52.png" /></a>
+  <a href="javascript:toggle_menu();"><img id="path_sleep" class="path_icon" src="image/icon/none52.png" /></a>
+ <a href="javascript:toggle_menu();"><img src="image/path_menu_2x.png" width="40" id="path_button"/></a>
+  
+</footer>
+
+</div>
+
+<div class="op-card" id="thought_card">
+<header  class="op-header">
+<input type="button" class="header-btn left" value="取消" onclick="change_card('path_card')"/>
+<input type="button" class="header-btn right" value="保存" onclick="save_thought();" id="thought_button"/>
+<h1>Thought</h1>
+
+</header>
+
+<textarea class="op-form" placeholder="你在想些啥子？" name="thought_text" id="thought_text">
+</textarea>
+
+
+
+
+</div><!-- /thought_card -->
+
+
+	<script src="js/libs/jquery-1.6.2.min.js"></script>
+	<script src="js/libs/jquery.tmpl.js"></script>
+	<script src="js/libs/iscroll.js"></script>
+	<script src="phonegap-1.3.0.js"></script>
+	<script type="text/javascript">
+
+var myScroll;
+
+function loaded() 
+{
+	//Jiang
+	//myScroll = new iScroll('main');
+	
+	// check token exists
+	if( !kget('op_token') ) change_page( 'index' );
+	
+	// 
+	show_local_info();	
+	
+	
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+document.addEventListener('DOMContentLoaded', loaded, false);
+document.addEventListener("deviceready",onDeviceReady,false);
+
+
+function onDeviceReady() 
+{
+        pictureSource=navigator.camera.PictureSourceType;
+        destinationType=navigator.camera.DestinationType;
+}
+</script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+
+<script id="path_list_tpl" type="text/html">
+    <li class="clearfix">
+				<div class="list_avatar" data-url="${user.picture}"></div>
+				
+    {{if image_thumb != '' }}
+                <div class="list_image">
+                <img src="${image_thumb}" class="thumb" onload="myScroll.refresh();" onerror="reload_image(this);"/>
+                </div>
+    {{else}}
+				<div class="list_dot_gray"></div>
+                <div class="list_thought_wrapper">
+				<span class="arrow">◆</span>
+				<div class="list_thought">
+				 ${text}
+				</div>
+                </div>
+    {{/if}}
+			</li>
+</script>
+
+
+<!-- end scripts-->
+
+</body>
+</html>

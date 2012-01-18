@@ -1,0 +1,74 @@
+RIM-COD-SHA1-9: aa 76 12 39 aa 72 13 01 9b 9b b5 36 f3 87 88 b8 58 11 1b e3
+RIM-COD-SHA1-8: ef f7 7a f3 57 1f 20 62 cb 04 51 d6 f7 dc 8c ae 6b a3 5e 6c
+RIM-COD-SHA1-7: e6 85 4d 25 65 26 da 70 0c 16 28 bd 43 98 48 3a f1 5e f1 1f
+RIM-COD-SHA1-6: 83 d3 e4 86 c7 50 4e fe ec d8 31 c5 2b 72 8b 14 2a 35 15 49
+RIM-COD-SHA1-5: 2e b6 9b 31 4a 5d 6a eb bc 4b 2a 49 b6 20 5c 47 cd b6 08 a7
+RIM-COD-SHA1-4: 45 48 b5 3a 55 81 a4 95 77 b4 19 b7 ac 1f bd 3c ff 5b 7b a2
+RIM-COD-SHA1-3: 98 86 6a ba 38 c2 90 ea 10 89 6b 21 e7 cb c5 4a 7b f7 bf 1c
+RIM-COD-SHA1-2: e5 72 97 e2 1f f8 48 67 1c 80 6c 0b 81 7f 43 1c 30 a7 56 b6
+RIM-COD-SHA1-1: 30 01 7f 6e 9c b8 06 54 11 9f a0 b9 3e 13 7e c4 9c 1c 2b 68
+RIM-COD-URL-18: OpathPhonegapporting-18.cod
+RIM-COD-URL-17: OpathPhonegapporting-17.cod
+RIM-COD-URL-16: OpathPhonegapporting-16.cod
+RIM-COD-URL-15: OpathPhonegapporting-15.cod
+RIM-COD-URL-14: OpathPhonegapporting-14.cod
+RIM-COD-URL-13: OpathPhonegapporting-13.cod
+RIM-COD-URL-12: OpathPhonegapporting-12.cod
+RIM-COD-Size: 66584
+RIM-MIDlet-Icon-2-1: ____HOVER_ICON_images/icon.png,focused
+RIM-COD-URL-11: OpathPhonegapporting-11.cod
+RIM-MIDlet-Icon-Count-2: 1
+RIM-COD-URL-10: OpathPhonegapporting-10.cod
+RIM-MIDlet-Icon-Count-1: 1
+MIDlet-Vendor: Unknown
+RIM-MIDlet-Icon-1-1: images\____HOVER_ICON_icon.png,focused
+Manifest-Version: 1.0
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Size-18: 58296
+RIM-COD-Size-17: 56984
+RIM-COD-Size-16: 54008
+RIM-COD-Size-15: 42052
+RIM-COD-Size-14: 54956
+RIM-COD-Size-13: 57992
+RIM-COD-Size-12: 53288
+RIM-COD-Size-11: 28260
+RIM-COD-Size-10: 52140
+MIDlet-Version: 1.0.0.0
+MicroEdition-Profile: MIDP-2.0
+RIM-COD-URL: OpathPhonegapporting.cod
+RIM-COD-Creation-Time: 1326866956
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: OpathPhonegapporting.jar
+RIM-COD-SHA1-18: 19 12 e6 01 6a 74 f3 3f 79 1e b4 25 0d 7f 7e f3 91 47 0b 14
+RIM-COD-SHA1-17: 6b 32 5b 8d c9 67 6e cb b9 a0 58 9f e4 1e 74 db be 84 b9 8a
+RIM-COD-SHA1-16: 29 7d 08 5e 36 23 f4 ae 42 fb 06 ff 77 cf 19 99 52 30 55 f7
+RIM-COD-SHA1-15: 18 f2 22 cd 02 fd 1e 9d 9b be ac 48 27 68 89 9d 69 f3 b2 a1
+RIM-COD-SHA1-14: 84 ae ff e2 82 e5 28 88 5f 21 5e d2 de 36 b4 e9 29 5d fe 1d
+RIM-COD-SHA1-13: 18 5d b8 45 be 94 21 57 c7 b9 8b 85 7e e3 21 4e 9a 77 5f d6
+RIM-COD-SHA1-12: 3a f1 27 40 d7 72 a1 4a c3 c9 5f b6 b3 6e 07 c2 42 09 c5 21
+RIM-COD-Size-9: 55892
+RIM-COD-SHA1-11: ad cf e0 99 ca cf 3a e2 55 73 ed e7 ff ee 70 03 4c ec 58 4b
+RIM-COD-Size-8: 50568
+RIM-COD-SHA1-10: e2 ce ad 36 15 ff 0b 8d b8 7e 55 e8 7d b1 c7 eb 60 d8 64 99
+RIM-COD-Size-7: 55300
+RIM-COD-Size-6: 50284
+RIM-COD-Size-5: 50284
+RIM-COD-Size-4: 45576
+RIM-COD-Size-3: 51520
+RIM-COD-Size-2: 71064
+RIM-COD-Size-1: 70076
+MIDlet-1: Opath Phonegap porting,images/icon.png,rim:foreground;WIDGET;
+MIDlet-Name: Opath Phonegap porting
+RIM-COD-SHA1: 68 1e 6f 0c 37 ba 00 fc 17 9d b4 49 cc 19 fb f0 5e 5e ae 7c
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bb_web_jse_api,net_rim_xml_org,net_rim_bb_browser_field2_api,net_rim_os,net_rim_bbapi_phone,net_rim_bbapi_mailv2,net_rim_bbapi_push,net_rim_bbapi_messagelist,net_rim_pdap,net_rim_bbapi_invoke,net_rim_networkapi,net_rim_bb_browser_field_api,net_rim_xml,net_rim_bbapi_browser
+MIDlet-Jar-Size: 1443303
+RIM-COD-URL-9: OpathPhonegapporting-9.cod
+RIM-COD-URL-8: OpathPhonegapporting-8.cod
+RIM-COD-URL-7: OpathPhonegapporting-7.cod
+RIM-COD-URL-6: OpathPhonegapporting-6.cod
+RIM-COD-URL-5: OpathPhonegapporting-5.cod
+RIM-COD-URL-4: OpathPhonegapporting-4.cod
+RIM-COD-URL-3: OpathPhonegapporting-3.cod
+RIM-COD-URL-2: OpathPhonegapporting-2.cod
+RIM-COD-URL-1: OpathPhonegapporting-1.cod
+RIM-COD-Module-Name: OpathPhonegapporting

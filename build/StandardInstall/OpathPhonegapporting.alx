@@ -1,0 +1,10 @@
+<loader version="1.0" >
+<application id="OpathPhonegapporting">
+<name>Opath Phonegap porting</name>
+<version>1.0.0.0</version>
+<fileset Java="1.45">
+<directory></directory>
+<files>OpathPhonegapporting.cod</files>
+</fileset>
+</application>
+</loader>
